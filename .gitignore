@@ -184,4 +184,5 @@ cython_debug/
 # LOCAL DATASETS - DO NOT COMMIT
 # ============================================================
 
-/data/
+/data/*
+!/data/README.md
