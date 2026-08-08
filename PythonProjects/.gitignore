@@ -196,4 +196,5 @@ while True:
 test_files/
 
 notifications.json
-
+bank_accounts.json
+tasks.json
