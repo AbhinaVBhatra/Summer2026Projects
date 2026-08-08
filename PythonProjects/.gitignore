@@ -1,0 +1,192 @@
+JSON version of Student-RecordFileSystem
+import json
+import os
+
+
+fname = "students.json"
+
+
+def load_students():
+    if os.path.exists(fname):
+        f = open(fname, "r")
+        students = json.load(f)
+        f.close()
+        return students
+    else:
+        return []
+
+
+def save_students(students):
+    f = open(fname, "w")
+    json.dump(students, f, indent=4)
+    f.close()
+
+
+def add_student(students):
+    print("\n---------- ADD STUDENT ----------")
+
+    name = input("Enter student name: ")
+    roll_no = input("Enter roll number: ")
+    course = input("Enter course: ")
+    marks = float(input("Enter marks: "))
+
+    student = {
+        "name": name,
+        "roll_no": roll_no,
+        "course": course,
+        "marks": marks
+    }
+
+    students.append(student)
+
+    save_students(students)
+
+    print("Student added successfully!")
+
+
+def view_students(students):
+    print("\n---------- STUDENT RECORDS ----------")
+
+    if len(students) == 0:
+        print("No student records found.")
+    else:
+        i = 1
+
+        for student in students:
+            print("\nStudent", i)
+            print("Name:", student["name"])
+            print("Roll No:", student["roll_no"])
+            print("Course:", student["course"])
+            print("Marks:", student["marks"])
+
+            if student["marks"] >= 40:
+                print("Result: Pass")
+            else:
+                print("Result: Fail")
+
+            i = i + 1
+
+    print("-------------------------------------")
+
+
+def search_student(students):
+    print("\n---------- SEARCH STUDENT ----------")
+
+    roll_no = input("Enter roll number to search: ")
+
+    found = False
+
+    for student in students:
+        if student["roll_no"] == roll_no:
+
+            print("\nStudent found!")
+            print("Name:", student["name"])
+            print("Roll No:", student["roll_no"])
+            print("Course:", student["course"])
+            print("Marks:", student["marks"])
+
+            if student["marks"] >= 40:
+                print("Result: Pass")
+            else:
+                print("Result: Fail")
+
+            found = True
+            break
+
+    if found == False:
+        print("Student not found.")
+
+
+def update_student(students):
+    print("\n---------- UPDATE STUDENT ----------")
+
+    roll_no = input("Enter roll number to update: ")
+
+    found = False
+
+    for student in students:
+        if student["roll_no"] == roll_no:
+
+            print("\nStudent found.")
+
+            name = input("Enter new name: ")
+            course = input("Enter new course: ")
+            marks = float(input("Enter new marks: "))
+
+            student["name"] = name
+            student["course"] = course
+            student["marks"] = marks
+
+            save_students(students)
+
+            print("Student record updated successfully!")
+
+            found = True
+            break
+
+    if found == False:
+        print("Student not found.")
+
+
+def delete_student(students):
+    print("\n---------- DELETE STUDENT ----------")
+
+    roll_no = input("Enter roll number to delete: ")
+
+    found = False
+
+    for student in students:
+        if student["roll_no"] == roll_no:
+
+            students.remove(student)
+
+            save_students(students)
+
+            print("Student record deleted successfully!")
+
+            found = True
+            break
+
+    if found == False:
+        print("Student not found.")
+
+
+students = load_students()
+
+
+while True:
+    print("\n================================")
+    print("       STUDENT RECORD SYSTEM")
+    print("================================")
+    print("1. Add student")
+    print("2. View students")
+    print("3. Search student")
+    print("4. Update student")
+    print("5. Delete student")
+    print("6. Exit")
+    print("================================")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        add_student(students)
+
+    elif choice == "2":
+        view_students(students)
+
+    elif choice == "3":
+        search_student(students)
+
+    elif choice == "4":
+        update_student(students)
+
+    elif choice == "5":
+        delete_student(students)
+
+    elif choice == "6":
+        save_students(students)
+        print("\nStudent records saved. Goodbye!")
+        break
+
+    else:
+        print("Invalid choice. Please try again.")
