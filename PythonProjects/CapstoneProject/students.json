@@ -1,0 +1,44 @@
+[
+    {
+        "student_id": "19872022",
+        "name": "LionelMessi",
+        "age": 19,
+        "course": "AcademiaFootBall",
+        "semester": 3,
+        "subjects": {
+            "Dribbling": 100,
+            "Tackling": 100,
+            "BreakingDefense": 100,
+            "Passing": 100,
+            "Striking ": 100
+        }
+    },
+    {
+        "student_id": "19852021",
+        "name": "CristianoRonaldo",
+        "age": 21,
+        "course": "AcademiaFootBall",
+        "semester": 5,
+        "subjects": {
+            "Dribbling": 84,
+            "Tackling": 100,
+            "BreakingDefense": 93,
+            "Passing": 73,
+            "Striking ": 100
+        }
+    },
+    {
+        "student_id": "19922016",
+        "name": "NeymarJR",
+        "age": 17,
+        "course": "AcademiaFootBall",
+        "semester": 1,
+        "subjects": {
+            "Dribbling": 100,
+            "Tackling": 91,
+            "BreakingDefense": 95,
+            "Passing": 90,
+            "Striking ": 93
+        }
+    }
+]
