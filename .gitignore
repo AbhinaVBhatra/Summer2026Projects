@@ -187,9 +187,3 @@ cython_debug/
 /data/*
 !/data/README.md
 
-02_Python_Based_DataProcessing/outputs
-03_Data_Cleaning_&Preparation/outputs
-04_Insight_DiscoveryThrough_EDA/outputs
-05_Statistical_Decision_Support/outputs
-06_ML_Feasibility_Assessment/outputs
-07_Predictive_Modelling/outputs
