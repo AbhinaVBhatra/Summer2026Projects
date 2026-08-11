@@ -186,3 +186,6 @@ cython_debug/
 
 /data/*
 !/data/README.md
+
+02_Python_Based_DataProcessing/outputs
+
