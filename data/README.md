@@ -1,357 +1,362 @@
-# Dataset Documentation
+# Dataset & Resource Attribution
 
-This directory documents the datasets used throughout the Summer 2026
-Data Science Projects.
+This repository contains a collection of Data Science, Machine Learning, and AI projects developed as part of my academic and portfolio project work.
 
-The original raw datasets are downloaded separately from their
-respective sources and are stored locally for analysis.
+The projects make use of publicly available third-party datasets and resources for educational, analytical, experimentation, research, and demonstration purposes.
 
-**The original raw datasets are intentionally NOT redistributed through
-this GitHub repository.**
-
-The datasets are used for educational and portfolio-analysis purposes.
-Each dataset remains subject to its respective ownership, license,
-attribution requirements, and terms of use.
+I do not claim ownership of any third-party datasets. Ownership, copyright, licensing, and attribution rights remain with the respective dataset creators, organizations, publishers, or original data providers.
 
 ---
 
-# 1. Demand & Inventory — Retail Store Inventory Dataset
+## Datasets Used Across Projects 01–10
 
-## Dataset source
+The first ten projects were organized around three major business-problem domains:
 
-**Platform:** Kaggle
+- Demand & Inventory
+- Fraud Detection
+- Recommendation Systems
 
-**Dataset:** Retail Store Inventory Forecasting Dataset
+---
 
-**Dataset author:** Anirudh Singh Chauhan
+## Demand & Inventory Domain
 
-**Original dataset page:**
+**Projects:** P01, P02, P05
 
-https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset
+### Retail Store Inventory and Sales Data
 
-## License
+**Primary use:**
 
-**CC0: Public Domain**
-
-The Kaggle dataset page currently identifies this dataset as
-**CC0: Public Domain**.
-
-## Local location
-
-The dataset is stored locally at:
-
-`data/demand_inventory/`
-
-The primary raw file is:
-
-`retail_store_inventory.csv`
-
-## Purpose
-
-This dataset is used for educational and portfolio analysis involving:
-
-- Business problem framing
-- Retail sales analysis
-- Demand analysis
+- Retail demand analysis
 - Inventory analysis
-- Exploratory Data Analysis (EDA)
+- Sales analysis
+- Exploratory Data Analysis
 - Statistical decision support
-- Demand forecasting
 - Predictive modeling
-- Inventory-related decision support
 
-## Dataset characteristics
+**Source:** Kaggle — Retail Store Inventory and Sales Data
 
-The dataset is described on Kaggle as a synthetic dataset designed for
-inventory management and demand forecasting practice.
+**Dataset:**  
+https://www.kaggle.com/datasets/sandhyapeesara/retail-store-inventory
 
-It contains daily retail data involving stores, products, sales,
-inventory, pricing, promotions, weather and other demand-related
-attributes.
+**License:** CC0: Public Domain
 
-## Repository status
+The Kaggle dataset page identifies the dataset as *Retail Store Inventory and Sales Data* and lists its license as **CC0: Public Domain**.
 
-**Raw dataset: NOT REDISTRIBUTED IN THIS REPOSITORY.**
+**Repository handling:**
 
-The raw CSV remains stored locally and is excluded from Git tracking.
-
-## Usage
-
-**Purpose:** Educational / portfolio analysis.
-
-The dataset is used to demonstrate data-processing, analytical,
-statistical and machine-learning techniques.
-
-The repository contains the original analysis and implementation work,
-but does not redistribute the original raw dataset.
+The original dataset is not redistributed in this repository. The dataset is maintained locally for project execution.
 
 ---
 
-# 2. Fraud Detection — Credit Card Transactions Fraud Detection Dataset
+## Fraud Detection Domain
 
-## Dataset source
+**Projects:** P03, P04, P06, P07
 
-**Platform:** Kaggle
+### Fraud Detection Dataset
 
-**Dataset:** Credit Card Transactions Fraud Detection Dataset
+**Primary use:**
 
-**Dataset uploader:** Kartik2112
+- Fraud pattern analysis
+- Data cleaning
+- Exploratory Data Analysis
+- Feature analysis
+- Machine Learning feasibility assessment
+- Predictive modeling
 
-**Original dataset page:**
+**Source:** Kaggle — Fraud Detection Dataset by `kartik2112`
 
+**Dataset:**  
 https://www.kaggle.com/datasets/kartik2112/fraud-detection
 
-## License
+**License:** CC0: Public Domain
 
-**CC0: Public Domain**
+The dataset is publicly available through Kaggle and is attributed to the `kartik2112` dataset source.
 
-The Kaggle dataset page currently identifies this dataset as
-**CC0: Public Domain**.
+**Repository handling:**
 
-## Important dataset note
-
-This dataset is a **simulated credit-card transaction dataset**.
-
-According to the dataset documentation, the transactions were
-generated using the Sparkov data-generation approach and represent
-legitimate and fraudulent transactions covering the period from
-January 1, 2019 to December 31, 2020.
-
-Therefore, the dataset should not be represented as real banking
-transaction data.
-
-## Local location
-
-The dataset is stored locally at:
-
-`data/fraud/`
-
-The downloaded raw files may include:
-
-- `fraudTrain.csv`
-- `fraudTest.csv`
-
-## Purpose
-
-This dataset is used for educational and portfolio analysis involving:
-
-- Fraud detection
-- Fraudulent transaction analysis
-- Class imbalance analysis
-- Feature engineering
-- Statistical analysis
-- Binary classification
-- Fraud-risk prediction
-- Anomaly detection
-- Model evaluation
-
-## Expected analytical / ML applications
-
-The dataset may be used to investigate questions such as:
-
-- What characteristics are associated with fraudulent transactions?
-- How does transaction amount relate to fraud?
-- Are fraudulent transactions associated with particular times,
-  categories or locations?
-- Can a transaction be assigned a fraud probability?
-- Can machine learning distinguish fraudulent from legitimate
-  transactions?
-
-## Repository status
-
-**Raw dataset: NOT REDISTRIBUTED IN THIS REPOSITORY.**
-
-The raw dataset remains stored locally and is excluded from Git
-tracking.
-
-## Usage
-
-**Purpose:** Educational / portfolio analysis.
-
-The dataset is used to demonstrate data cleaning, exploratory
-analysis, feature engineering, statistical analysis and machine
-learning.
-
-The dataset is simulated and should not be presented as evidence of
-actual financial-fraud patterns in a real financial institution.
+The original dataset is not redistributed in this repository.
 
 ---
 
-# 3. Recommendation — Retailrocket E-commerce Dataset
+## Recommendation Systems Domain
 
-## Dataset source
+**Projects:** P08, P09, P10
 
-**Platform:** Kaggle
+### MovieLens 100K
 
-**Dataset:** Retailrocket Recommender System Dataset
+**Primary use:**
 
-**Dataset uploader:** Retailrocket
+- User-item interaction analysis
+- Rating-pattern analysis
+- Recommendation logic
+- Collaborative filtering
+- Recommendation evaluation
+- End-to-end recommendation workflow
 
-**Original dataset page:**
+**Source:** GroupLens Research — MovieLens 100K
 
+**Official dataset:**  
+https://grouplens.org/datasets/movielens/100k/
+
+The MovieLens 100K dataset contains 100,000 ratings from 1,000 users across approximately 1,700 movies.
+
+**License / usage conditions:**
+
+MovieLens is governed by the usage conditions specified by GroupLens. The dataset documentation requires appropriate acknowledgement and places restrictions on certain uses, including commercial use and redistribution.
+
+**Repository handling:**
+
+The raw MovieLens dataset is **not included in this public repository**. Users should obtain it directly from the official GroupLens source and review the accompanying README and usage terms.
+
+---
+
+### Retailrocket Ecommerce Dataset
+
+**Primary use:**
+
+- E-commerce user behavior analysis
+- Implicit-feedback recommendation
+- User-item interaction analysis
+- Recommendation-system experimentation
+- Behavioral pattern discovery
+
+**Source:** Kaggle — Retailrocket Recommender System Dataset
+
+**Dataset:**  
 https://www.kaggle.com/datasets/retailrocket/ecommerce-dataset
 
-## License
+The dataset contains behavioral events, item properties, and a category tree collected from a real-world e-commerce website.
 
-**CC BY-NC-SA 4.0**
+**License:** CC BY-NC-SA 4.0
 
-The Kaggle dataset page currently identifies this dataset as
-**CC BY-NC-SA 4.0**.
+This license permits use subject to the conditions of:
 
-This license requires appropriate attribution and includes
-non-commercial and share-alike conditions.
+- Attribution
+- Non-commercial use
+- Sharing under the same license
 
-The applicable license terms should be respected whenever the dataset,
-a derivative of the dataset, or material based upon it is
-redistributed.
+**Repository handling:**
 
-## Local location
-
-The dataset is stored locally at:
-
-`data/recommendation/`
-
-The downloaded dataset may contain files such as:
-
-- `events.csv`
-- `item_properties.csv`
-- `category_tree.csv`
-
-The exact filenames may depend on the downloaded dataset version.
-
-## Dataset characteristics
-
-The dataset contains e-commerce interaction data collected from a
-real-world e-commerce website.
-
-The published data includes events such as:
-
-- Views
-- Add-to-cart interactions
-- Transactions
-
-It also contains item properties and a category hierarchy.
-
-The published values are hashed for confidentiality purposes.
-
-## Purpose
-
-This dataset is used for educational and portfolio analysis involving:
-
-- Customer behaviour analysis
-- Customer segmentation
-- Product interaction analysis
-- Recommendation systems
-- Collaborative filtering
-- Implicit-feedback modeling
-- Product personalization
-- Ranking
-- AI recommendation use cases
-
-## Expected analytical / ML applications
-
-The dataset may be used to investigate questions such as:
-
-- What products does a visitor interact with?
-- What categories are associated with a visitor's behaviour?
-- Can similar users or items be identified?
-- Can products be recommended based on previous interactions?
-- Can products be ranked according to their predicted relevance?
-
-## Attribution
-
-The dataset is attributed to **Retailrocket** and is obtained through
-the Kaggle publication identified above.
-
-The original dataset source and applicable license are retained in
-this documentation.
-
-## Repository status
-
-**Raw dataset: NOT REDISTRIBUTED IN THIS REPOSITORY.**
-
-The raw dataset remains stored locally and is excluded from Git
-tracking.
-
-## Usage
-
-**Purpose:** Educational / portfolio analysis.
-
-The dataset is used for non-commercial educational and portfolio
-demonstration purposes.
-
-The applicable CC BY-NC-SA 4.0 license terms are respected.
+The original dataset is not redistributed in this repository.
 
 ---
 
-# Dataset Usage & Reproducibility Policy
+# Capstone Projects
 
-## Raw datasets
+The five capstone projects use separate datasets selected according to their respective business problems.
 
-The original raw datasets are **not included in this GitHub
-repository**.
+---
 
-They are downloaded separately from their respective original
-sources and stored locally.
+## CP01 — Customer Churn Prediction
 
-The repository therefore does not redistribute the original raw CSV
-files.
+### Telecom Customer Churn Dataset
 
-## What this repository contains
+**Primary use:**
 
-This repository contains original work developed for the projects,
-including:
-
-- Python code
-- Jupyter notebooks
-- Data-processing logic
-- Data-cleaning logic
-- Feature-engineering logic
+- Customer churn prediction
+- Customer-risk analysis
+- Data cleaning and preprocessing
 - Exploratory Data Analysis
-- Statistical analysis
-- Machine-learning implementations
-- Model evaluation
-- Visualizations
-- Documentation
-- Analytical results
+- Supervised Machine Learning
+- Churn-risk interpretation
+- Customer retention recommendations
 
-## Reproducing the projects
+**Underlying dataset:** IBM Telco Customer Churn Dataset
 
-To reproduce a project:
+The commonly used Telco Customer Churn dataset contains 7,043 customer records along with demographic, service, account, billing, and churn information.
 
-1. Obtain the required dataset from its original source.
-2. Review the dataset's current license and usage conditions.
-3. Place the downloaded dataset in the corresponding local
-   `data/` directory.
-4. Run the relevant notebook or source code.
+**Source attribution:**
 
-## Licensing and attribution
+IBM Telco Customer Churn Dataset / Kaggle-hosted distribution used for the project.
 
-Each dataset remains subject to its respective license.
+**Repository handling:**
 
-The license information documented above reflects the license shown
-on the respective Kaggle dataset pages at the time this documentation
-was prepared.
+The raw dataset is not redistributed in this repository.
 
-Users should verify the current license and terms on the original
-dataset page before redistributing the dataset or derivatives of it.
-
-## Educational / portfolio purpose
-
-The datasets are used for **educational and portfolio-analysis
-purposes**.
-
-This repository does not claim ownership of any third-party dataset.
-
-All dataset ownership and applicable rights remain with the respective
-dataset owner/provider.
+> **License note:** The exact license and usage conditions should be attributed to the specific copy/source from which the project dataset was downloaded. IBM-origin data and Kaggle re-uploads should not automatically be assumed to have identical licensing terms.
 
 ---
 
-## Summary
+## CP02 — Online Retail Analysis
 
-| Dataset | Business Domain | Source | License | Raw Dataset in GitHub? |
-|---|---|---|---|---|
-| Retail Store Inventory Forecasting | Demand & Inventory | Kaggle | CC0: Public Domain | No |
-| Credit Card Transactions Fraud Detection | Fraud | Kaggle | CC0: Public Domain | No |
-| Retailrocket E-commerce | Recommendation | Kaggle | CC BY-NC-SA 4.0 | No |
+### UCI Online Retail Dataset
+
+**Primary use:**
+
+- Customer purchasing analysis
+- Transaction analysis
+- Retail behavior analysis
+- RFM-style analysis
+- Customer segmentation
+- Business insight generation
+
+**Original source:** UCI Machine Learning Repository — Online Retail Dataset
+
+The dataset contains transactions from a UK-based non-store online retailer covering the period from December 2010 to December 2011.
+
+**Source attribution:**
+
+UCI Machine Learning Repository — Online Retail Dataset.
+
+**Kaggle distribution:**
+
+Several Kaggle mirrors of the UCI Online Retail dataset exist. Their stated licenses are not necessarily identical.
+
+**Repository handling:**
+
+The original dataset is not redistributed in this repository.
+
+> **License note:** The original UCI source should be treated as the primary attribution rather than assuming that the license of a particular Kaggle mirror automatically applies to the original dataset.
+
+---
+
+## CP03 — FMCG Sales Analysis & Forecasting
+
+### FMCG Sales Dataset
+
+**Primary use:**
+
+- FMCG sales analysis
+- Sales trend analysis
+- Demand forecasting
+- Time-series analysis
+- Promotional analysis
+- Business decision support
+
+**Source:** Kaggle — FMCG Sales Demand Forecasting and Optimization
+
+**Dataset:**  
+https://www.kaggle.com/datasets/krishanukalita/fmcg-sales-demand-forecasting-and-optimization
+
+The dataset contains FMCG sales data across categories such as beverages, snacks, dairy, household, and personal care, together with variables related to sales, pricing, promotions, stores, costs, replenishment, and inventory.
+
+**License:** CC0: Public Domain
+
+The Kaggle dataset page explicitly lists the dataset under **CC0: Public Domain**.
+
+**Repository handling:**
+
+The original dataset is not redistributed in this repository.
+
+> **Important:** This attribution applies if this is the exact FMCG dataset used for CP03. If another FMCG dataset was used, its exact source and license should replace this entry.
+
+---
+
+## CP04 — AI-Based Book Recommendation System
+
+### Book Recommendation Dataset
+
+**Primary use:**
+
+- User-book interaction analysis
+- Recommendation logic
+- Collaborative filtering
+- Popularity-based recommendation
+- Content-based recommendation concepts
+- Recommendation evaluation
+
+**Source:** Kaggle — Book Recommendation Dataset by Möbius (`arashnic`)
+
+**Dataset:**  
+https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset
+
+The dataset is designed for experimentation with book recommendation systems and contains data suitable for developing recommendation approaches.
+
+**Repository handling:**
+
+The original dataset is not redistributed in this repository.
+
+> **License note:** The exact license shown for the dataset version used in the project should be followed. The dataset should not be described as CC0, MIT, or another specific license unless that exact license is confirmed for the downloaded version.
+
+---
+
+## CP05 — Retail Inventory Analysis
+
+### Retail Store Inventory and Sales Data
+
+**Primary use:**
+
+- Inventory analysis
+- Demand analysis
+- Sales analysis
+- Stock-level analysis
+- Inventory optimization
+- Predictive/business decision support
+
+**Source:** Kaggle — Retail Store Inventory and Sales Data
+
+**Dataset:**  
+https://www.kaggle.com/datasets/sandhyapeesara/retail-store-inventory
+
+**License:** CC0: Public Domain
+
+The Kaggle dataset page explicitly lists the dataset under **CC0: Public Domain**.
+
+This dataset is also connected to the earlier Demand & Inventory project work in this portfolio.
+
+**Repository handling:**
+
+The original dataset is not redistributed in this repository.
+
+---
+
+# Dataset Attribution Summary
+
+| Project | Dataset | Source | License / Usage |
+|---|---|---|---|
+| P01 | Retail Store Inventory | Kaggle | CC0 |
+| P02 | Retail Store Inventory | Kaggle | CC0 |
+| P03 | Fraud Detection | Kaggle — `kartik2112` | CC0 |
+| P04 | Fraud Detection | Kaggle — `kartik2112` | CC0 |
+| P05 | Retail Store Inventory | Kaggle | CC0 |
+| P06 | Fraud Detection | Kaggle — `kartik2112` | CC0 |
+| P07 | Fraud Detection | Kaggle — `kartik2112` | CC0 |
+| P08 | MovieLens 100K | GroupLens Research | GroupLens usage terms |
+| P09 | MovieLens / Recommendation Resources | GroupLens / Kaggle | Dataset-specific terms |
+| P10 | MovieLens / Recommendation Resources | GroupLens / Kaggle | Dataset-specific terms |
+| CP01 | Telecom Churn | IBM / Kaggle distribution | Source/version-specific terms |
+| CP02 | Online Retail | UCI / Kaggle distribution | Source/version-specific terms |
+| CP03 | FMCG Sales | Kaggle | CC0* |
+| CP04 | Book Recommendation | Kaggle — Möbius (`arashnic`) | Dataset-version-specific terms |
+| CP05 | Retail Store Inventory | Kaggle | CC0 |
+
+\* CC0 applies to the specific Kaggle FMCG dataset identified above. The exact source should be verified against the downloaded CP03 dataset before publication.
+
+---
+
+# Repository Data Policy
+
+To respect third-party dataset ownership and licensing requirements:
+
+- Raw third-party datasets are not included in this public repository.
+- Dataset source pages are provided for attribution and reproducibility.
+- Users should download datasets directly from their original source where possible.
+- Dataset licenses and usage conditions should be reviewed before redistribution or commercial use.
+- Processed datasets derived from third-party data may also remain subject to the terms of the original dataset.
+- `.gitignore` is used to prevent accidental upload of raw or local datasets.
+- This repository does not claim ownership of any third-party dataset.
+- All project code, preprocessing workflows, analyses, visualizations, models, evaluation procedures, interpretations, and business recommendations developed in this repository represent my own project work.
+
+---
+
+# Acknowledgement
+
+I acknowledge the researchers, organizations, dataset creators, and open-data communities that made these datasets publicly available.
+
+These resources provided the foundation for practical experimentation in:
+
+- Data Processing
+- Data Cleaning
+- Exploratory Data Analysis
+- Statistical Analysis
+- Machine Learning
+- Predictive Modeling
+- Customer Analytics
+- Fraud Detection
+- Inventory Analytics
+- Demand & Sales Analysis
+- Recommendation Systems
+
+All rights to the underlying third-party datasets remain with their respective owners and are subject to their individual licenses and terms of use.
+
+For the most accurate and up-to-date licensing information, users should refer to the original dataset page and its associated license/terms before downloading, modifying, redistributing, or commercially using any dataset.
